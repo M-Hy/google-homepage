@@ -1,0 +1,1 @@
+This is an exercise for the Odin Project. I sort of skipped ahead because I've studied CSS and HTML a decent amount in the past. Sort of winging it right now. Here goes nothing.
