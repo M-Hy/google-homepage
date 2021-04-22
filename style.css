@@ -1,12 +1,72 @@
-img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+body {
+    font-family: Arial, sans-serif;
+    font-size: small;
 }
 
-.navbar {
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;  
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    padding: 5px;
+}
+
+nav div {
+    width: 50%;
     display: flex;
     align-items: center;
-    width: 100%;
-    padding: 20px;
+    
+}
+
+nav div:nth-child(1) {
+    justify-content: start;
+}
+
+nav div:nth-child(2) {
+    justify-content: flex-end;
+   
+}
+
+.apps {
+    background: url("https://static.thenounproject.com/png/756729-200.png");
+    height: 15px;
+    width: 15px;
+    background-size: cover;
+}
+
+.user {
+    background: url("https://www.freepngimg.com/download/google/66726-customer-account-google-service-button-search-logo.png");
+    background-size: cover;
+    height: 18px;
+    width: 18px;
+}
+
+nav div a {
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+    margin: 10px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+}
+
+#searchbar {
+    margin: 15px;
+    width: 550px;
+    height: 30px;
+    
 }
