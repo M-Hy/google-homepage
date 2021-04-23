@@ -1,3 +1,10 @@
+.search-icon {
+    background: url("https://cdn1.iconfinder.com/data/icons/flat-web-browser/100/search-512.png");
+    background-size: 17px;
+    background-repeat: no-repeat;
+    
+}
+
 body {
     font-family: Arial, sans-serif;
     font-size: small;
@@ -65,9 +72,54 @@ main {
 }
 
 #searchbar {
-    margin: 15px;
-    width: 550px;
-    height: 30px;
+    margin: 20px;
+    width: 80vw;
+    max-width: 520px;
+    height: 40px;
     border-radius: 50px;
+    border: 1px solid rgb(211, 208, 208); 
+    padding: 0 40px;
+}
+
+.search-icon {
+    position: absolute;
+    padding: 11px 11px;
+    filter: contrast(0);
     
+    margin: 33px 30px;
+}
+
+#searchbar:hover, #searchbar:focus {
+    box-shadow: 0px 3px 5px rgb(238, 238, 238), 0px -1.5px 5px rgb(238, 238, 238);
+    /* outline: none; */
+    outline: none;
+}
+
+.info, .infotwo {
+    visibility: hidden;
+    width: 90px;
+    background-color: rgb(121, 121, 121);
+    color: #fff;
+    text-align: center;
+    padding: 5px 2px;
+    border-radius: 6px;
+    position: fixed;
+    top: 60px;
+    right: 35px;
+    z-index: 1;
+}
+
+.apps:hover .info{
+    visibility: visible;
+    transition-delay: 0.5s;
+}
+
+.user:hover .infotwo {
+    visibility: visible;
+    transition-delay: 0.5s;
+    text-align: left;
+    position: fixed;
+    right: 5px;
+    padding-left: 5px;
+    width: 20vw;
 }
